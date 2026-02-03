@@ -24,6 +24,45 @@ header {
   border-radius: 5px;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.admin-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-button {
+  background-color: #ffffff;
+  color: #1a237e;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.admin-status {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-link {
+  background: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -55,6 +94,12 @@ section h3 {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
   color: #1a237e;
+}
+
+.admin-hint {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .activity-card {
@@ -160,6 +205,11 @@ button {
   transition: background-color 0.2s;
 }
 
+button.secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
 button:hover {
   background-color: #3949ab;
 }
@@ -190,6 +240,35 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 footer {
